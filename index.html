@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="search_bar">
+                    <input class="search_input" type="text" placeholder="Enter a city name">
+                    <button class="search_button"><img class="search_icon" src="./src/img/search.png"></button>
+                </div>
+            </div>
+
+            <div class="body">
+                <img class="weather_icon" src="./src/img/clear.png">
+                <h1 class="temperature_display"><span class="temperature_value" >0</span>°c</h1>
+                <h3 class="city_name">City Name</h3>
+            </div>
+
+            <div class="footer">
+                <div class="half_section">
+                    <img class="section_icon humidity_icon" src="./src/img/humidity.png">
+                    <div class="section_info">
+                        <h3 class="section_value"><span class='humidity_value'>0</span>%</h3>
+                        <h5 class="section_label">Humidity</h5>
+                    </div>
+                </div>
+
+                <div class="half_section">
+                    <img class="section_icon wind_icon" src="./src/img/wind.png">
+                    <div class="section_info">
+                        <h3 class="section_value"><span class='wind_value'>0</span> km/h</h3>
+                        <h5 class="section_label">Wind Speed</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./dist/main.js"></script>
+    </body>
+    
+</html>
