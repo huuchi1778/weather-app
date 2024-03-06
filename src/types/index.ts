@@ -60,6 +60,38 @@ export type GeolocationPosition = {
   timestamp: number
 }
 
+export type ReverseGeocodingProps = {
+  lat: string,
+  lon: string,
+  appid: string,
+  limit?: number
+}
+
+export type ReverseGeoCodeResponse = {
+  [key: string]: LocationResponse
+}
+
+export type UIDataProps = {
+  weatherData: WeatherResponse,
+  geoCodes?: DirectGeoCodingResponse,
+  locationData?: ReverseGeoCodeResponse
+}
+
+
+type LocationResponse = {
+  name: string;
+  local_names: LocalNames;
+  lat: number;
+  lon: number;
+  country: string;
+}
+
+type LocalNames = {
+  [language: string]: string;
+  ascii?: string;
+  feature_name?: string;
+}
+
 type WeatherDescription = {
   id: number;
   main: string;
